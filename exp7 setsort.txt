@@ -1,0 +1,18 @@
+#include <iostream>
+#include <set>
+
+using namespace std;
+
+int main() {
+    int arr[] = {5, 2, 8, 3, 9, 1};
+    int n = sizeof(arr)/sizeof(arr[0]);
+    
+    set<int> s(arr, arr+n); //create a set from the array
+    
+    //print the sorted set
+    for (auto it = s.begin(); it != s.end(); it++) {
+        cout << *it << " ";
+    }
+    
+    return 0;
+}
